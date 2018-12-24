@@ -1,0 +1,520 @@
+
+Node3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000286  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000212  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800100  00800100  00000286  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000286  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000002b8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000148  00000000  00000000  000002f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000fd9  00000000  00000000  0000043c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000a6b  00000000  00000000  00001415  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000744  00000000  00000000  00001e80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000200  00000000  00000000  000025c4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000005a5  00000000  00000000  000027c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000258  00000000  00000000  00002d69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000e8  00000000  00000000  00002fc1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	53 c0       	rjmp	.+166    	; 0xac <__bad_interrupt>
+   6:	00 00       	nop
+   8:	51 c0       	rjmp	.+162    	; 0xac <__bad_interrupt>
+   a:	00 00       	nop
+   c:	4f c0       	rjmp	.+158    	; 0xac <__bad_interrupt>
+   e:	00 00       	nop
+  10:	4d c0       	rjmp	.+154    	; 0xac <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4b c0       	rjmp	.+150    	; 0xac <__bad_interrupt>
+  16:	00 00       	nop
+  18:	49 c0       	rjmp	.+146    	; 0xac <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	47 c0       	rjmp	.+142    	; 0xac <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	45 c0       	rjmp	.+138    	; 0xac <__bad_interrupt>
+  22:	00 00       	nop
+  24:	43 c0       	rjmp	.+134    	; 0xac <__bad_interrupt>
+  26:	00 00       	nop
+  28:	41 c0       	rjmp	.+130    	; 0xac <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3f c0       	rjmp	.+126    	; 0xac <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	3d c0       	rjmp	.+122    	; 0xac <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3b c0       	rjmp	.+118    	; 0xac <__bad_interrupt>
+  36:	00 00       	nop
+  38:	39 c0       	rjmp	.+114    	; 0xac <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	37 c0       	rjmp	.+110    	; 0xac <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	35 c0       	rjmp	.+106    	; 0xac <__bad_interrupt>
+  42:	00 00       	nop
+  44:	33 c0       	rjmp	.+102    	; 0xac <__bad_interrupt>
+  46:	00 00       	nop
+  48:	31 c0       	rjmp	.+98     	; 0xac <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2f c0       	rjmp	.+94     	; 0xac <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	2d c0       	rjmp	.+90     	; 0xac <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2b c0       	rjmp	.+86     	; 0xac <__bad_interrupt>
+  56:	00 00       	nop
+  58:	29 c0       	rjmp	.+82     	; 0xac <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	27 c0       	rjmp	.+78     	; 0xac <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	25 c0       	rjmp	.+74     	; 0xac <__bad_interrupt>
+  62:	00 00       	nop
+  64:	23 c0       	rjmp	.+70     	; 0xac <__bad_interrupt>
+  66:	00 00       	nop
+  68:	21 c0       	rjmp	.+66     	; 0xac <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1f c0       	rjmp	.+62     	; 0xac <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	1d c0       	rjmp	.+58     	; 0xac <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1b c0       	rjmp	.+54     	; 0xac <__bad_interrupt>
+  76:	00 00       	nop
+  78:	19 c0       	rjmp	.+50     	; 0xac <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	17 c0       	rjmp	.+46     	; 0xac <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	15 c0       	rjmp	.+42     	; 0xac <__bad_interrupt>
+  82:	00 00       	nop
+  84:	13 c0       	rjmp	.+38     	; 0xac <__bad_interrupt>
+  86:	00 00       	nop
+  88:	11 c0       	rjmp	.+34     	; 0xac <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	a3 30       	cpi	r26, 0x03	; 3
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	6b d0       	rcall	.+214    	; 0x180 <main>
+  aa:	b1 c0       	rjmp	.+354    	; 0x20e <_exit>
+
+000000ac <__bad_interrupt>:
+  ac:	a9 cf       	rjmp	.-174    	; 0x0 <__vectors>
+
+000000ae <COMM_IsHeader>:
+#include "CommProtocol.h"
+
+unsigned char COMM_IsHeader(unsigned char value) {
+	
+	return value & 0x80;
+}
+  ae:	80 78       	andi	r24, 0x80	; 128
+  b0:	08 95       	ret
+
+000000b2 <COMM_IsWrite>:
+
+unsigned char COMM_IsWrite(unsigned char value) {
+	
+	return value & 0x40;
+}
+  b2:	80 74       	andi	r24, 0x40	; 64
+  b4:	08 95       	ret
+
+000000b6 <COMM_GetField>:
+
+unsigned char COMM_GetField(unsigned char value) {
+	
+	return (value >> 3) & 0x07;
+  b6:	86 95       	lsr	r24
+  b8:	86 95       	lsr	r24
+  ba:	86 95       	lsr	r24
+}
+  bc:	87 70       	andi	r24, 0x07	; 7
+  be:	08 95       	ret
+
+000000c0 <COMM_GetPayloadHigh>:
+
+unsigned int COMM_GetPayloadHigh(unsigned char value) {
+	
+	return (unsigned int)(value & 0x07) << 7;
+  c0:	87 70       	andi	r24, 0x07	; 7
+}
+  c2:	20 e8       	ldi	r18, 0x80	; 128
+  c4:	82 9f       	mul	r24, r18
+  c6:	c0 01       	movw	r24, r0
+  c8:	11 24       	eor	r1, r1
+  ca:	08 95       	ret
+
+000000cc <COMM_GetPayloadLow>:
+
+unsigned int COMM_GetPayloadLow(unsigned char value) {
+	
+	return value & 0x7F;
+  cc:	8f 77       	andi	r24, 0x7F	; 127
+}
+  ce:	90 e0       	ldi	r25, 0x00	; 0
+  d0:	08 95       	ret
+
+000000d2 <COMM_GetWriteHeader>:
+unsigned char COMM_GetWriteHeader(unsigned char field, unsigned int value) {
+	
+	unsigned char data;
+	
+	data  = (value >> 7) & 0x07;
+	data |= (field << 3) & 0x38;
+  d2:	28 e0       	ldi	r18, 0x08	; 8
+  d4:	82 9f       	mul	r24, r18
+  d6:	c0 01       	movw	r24, r0
+  d8:	11 24       	eor	r1, r1
+  da:	88 73       	andi	r24, 0x38	; 56
+  dc:	66 0f       	add	r22, r22
+  de:	67 2f       	mov	r22, r23
+  e0:	66 1f       	adc	r22, r22
+  e2:	77 0b       	sbc	r23, r23
+  e4:	71 95       	neg	r23
+  e6:	67 70       	andi	r22, 0x07	; 7
+  e8:	86 2b       	or	r24, r22
+	data |= 0xC0;
+	
+	return data;
+}
+  ea:	80 6c       	ori	r24, 0xC0	; 192
+  ec:	08 95       	ret
+
+000000ee <COMM_GetWritePayload>:
+
+unsigned char COMM_GetWritePayload(unsigned int value) {
+	
+	return (value & 0x7F);
+  ee:	8f 77       	andi	r24, 0x7F	; 127
+  f0:	08 95       	ret
+
+000000f2 <FAN_Init>:
+#include <avr/io.h>
+#include "Fan.h"
+
+void FAN_Init()
+{
+	DDRB = 0x20;
+  f2:	80 e2       	ldi	r24, 0x20	; 32
+  f4:	87 bb       	out	0x17, r24	; 23
+
+	TCCR1A = (1<<COM1A1) | (1<<WGM11) | (1<<WGM10);
+  f6:	83 e8       	ldi	r24, 0x83	; 131
+  f8:	8f bd       	out	0x2f, r24	; 47
+	TCCR1B = (1<<WGM12) | (1<<CS10);
+  fa:	89 e0       	ldi	r24, 0x09	; 9
+  fc:	8e bd       	out	0x2e, r24	; 46
+	FAN_SetSpeed(0);
+}
+
+void FAN_SetSpeed(unsigned int speed)
+{
+	OCR1A = speed;
+  fe:	1b bc       	out	0x2b, r1	; 43
+ 100:	1a bc       	out	0x2a, r1	; 42
+ 102:	08 95       	ret
+
+00000104 <FAN_SetSpeed>:
+ 104:	9b bd       	out	0x2b, r25	; 43
+ 106:	8a bd       	out	0x2a, r24	; 42
+ 108:	08 95       	ret
+
+0000010a <LUM_Init>:
+
+#define LUM_SENSOR_CHANNEL		2
+
+void LUM_Init()
+{
+	ADCSRA = (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+ 10a:	87 e8       	ldi	r24, 0x87	; 135
+ 10c:	86 b9       	out	0x06, r24	; 6
+ 10e:	08 95       	ret
+
+00000110 <LUM_Read>:
+}
+
+unsigned int LUM_Read()
+{
+	ADMUX = LUM_SENSOR_CHANNEL;
+ 110:	82 e0       	ldi	r24, 0x02	; 2
+ 112:	87 b9       	out	0x07, r24	; 7
+	ADCSRA |= (1<<ADSC);
+ 114:	36 9a       	sbi	0x06, 6	; 6
+	
+	while(ADCSRA & (1<<ADSC));
+ 116:	36 99       	sbic	0x06, 6	; 6
+ 118:	fe cf       	rjmp	.-4      	; 0x116 <LUM_Read+0x6>
+
+	return ADC;
+ 11a:	84 b1       	in	r24, 0x04	; 4
+ 11c:	95 b1       	in	r25, 0x05	; 5
+ 11e:	08 95       	ret
+
+00000120 <ProcessWriteRequest>:
+	}
+}
+
+void ProcessWriteRequest()
+{
+	switch (currentField)
+ 120:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <currentField>
+ 124:	84 30       	cpi	r24, 0x04	; 4
+ 126:	29 f4       	brne	.+10     	; 0x132 <ProcessWriteRequest+0x12>
+	{
+		case FILED_FAN_SPEED:
+		FAN_SetSpeed(currentPayload);
+ 128:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <_edata>
+ 12c:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <_edata+0x1>
+ 130:	e9 cf       	rjmp	.-46     	; 0x104 <FAN_SetSpeed>
+ 132:	08 95       	ret
+
+00000134 <WriteTemperatureValue>:
+		break;
+	}
+}
+
+void WriteTemperatureValue()
+{
+ 134:	cf 93       	push	r28
+ 136:	df 93       	push	r29
+	unsigned int temperatureValue = TEMP_Read();
+ 138:	50 d0       	rcall	.+160    	; 0x1da <TEMP_Read>
+ 13a:	ec 01       	movw	r28, r24
+	
+	UART_Write(COMM_GetWriteHeader(FILED_TEMPERATURE_SENSOR, temperatureValue));
+ 13c:	bc 01       	movw	r22, r24
+ 13e:	83 e0       	ldi	r24, 0x03	; 3
+ 140:	c8 df       	rcall	.-112    	; 0xd2 <COMM_GetWriteHeader>
+ 142:	63 d0       	rcall	.+198    	; 0x20a <UART_Write>
+	UART_Write(COMM_GetWritePayload(temperatureValue));
+ 144:	ce 01       	movw	r24, r28
+ 146:	d3 df       	rcall	.-90     	; 0xee <COMM_GetWritePayload>
+ 148:	60 d0       	rcall	.+192    	; 0x20a <UART_Write>
+ 14a:	df 91       	pop	r29
+ 14c:	cf 91       	pop	r28
+}
+ 14e:	08 95       	ret
+
+00000150 <WriteLuminescenceValue>:
+ 150:	cf 93       	push	r28
+ 152:	df 93       	push	r29
+
+void WriteLuminescenceValue() 
+{
+	unsigned int luminescenceValue = LUM_Read();
+ 154:	dd df       	rcall	.-70     	; 0x110 <LUM_Read>
+ 156:	ec 01       	movw	r28, r24
+	
+	UART_Write(COMM_GetWriteHeader(FILED_LUMINESCENCE_SENSOR, luminescenceValue));
+ 158:	bc 01       	movw	r22, r24
+ 15a:	81 e0       	ldi	r24, 0x01	; 1
+ 15c:	ba df       	rcall	.-140    	; 0xd2 <COMM_GetWriteHeader>
+ 15e:	55 d0       	rcall	.+170    	; 0x20a <UART_Write>
+	UART_Write(COMM_GetWritePayload(luminescenceValue));
+ 160:	ce 01       	movw	r24, r28
+ 162:	c5 df       	rcall	.-118    	; 0xee <COMM_GetWritePayload>
+ 164:	52 d0       	rcall	.+164    	; 0x20a <UART_Write>
+ 166:	df 91       	pop	r29
+ 168:	cf 91       	pop	r28
+ 16a:	08 95       	ret
+
+0000016c <ProcessReadRequest>:
+ 16c:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <currentField>
+	}
+}
+
+void ProcessReadRequest() 
+{
+	switch (currentField)
+ 170:	81 30       	cpi	r24, 0x01	; 1
+ 172:	21 f0       	breq	.+8      	; 0x17c <ProcessReadRequest+0x10>
+ 174:	83 30       	cpi	r24, 0x03	; 3
+ 176:	19 f4       	brne	.+6      	; 0x17e <ProcessReadRequest+0x12>
+	{
+		case FILED_TEMPERATURE_SENSOR:
+		WriteTemperatureValue();
+ 178:	dd cf       	rjmp	.-70     	; 0x134 <WriteTemperatureValue>
+		break;
+		
+		case FILED_LUMINESCENCE_SENSOR:
+		WriteLuminescenceValue();
+ 17a:	08 95       	ret
+ 17c:	e9 cf       	rjmp	.-46     	; 0x150 <WriteLuminescenceValue>
+ 17e:	08 95       	ret
+
+00000180 <main>:
+unsigned char currentField;
+unsigned int  currentPayload;
+
+int main(void)
+{
+	UART_Init(9600);
+ 180:	80 e8       	ldi	r24, 0x80	; 128
+ 182:	95 e2       	ldi	r25, 0x25	; 37
+ 184:	32 d0       	rcall	.+100    	; 0x1ea <UART_Init>
+	
+	TEMP_Init();
+ 186:	26 d0       	rcall	.+76     	; 0x1d4 <TEMP_Init>
+	LUM_Init();
+ 188:	c0 df       	rcall	.-128    	; 0x10a <LUM_Init>
+	FAN_Init();
+ 18a:	b3 df       	rcall	.-154    	; 0xf2 <FAN_Init>
+	
+	while (1)
+	{
+		unsigned char data = UART_ReadBlocking();
+ 18c:	3a d0       	rcall	.+116    	; 0x202 <UART_ReadBlocking>
+ 18e:	c8 2f       	mov	r28, r24
+		
+		if(COMM_IsHeader(data))
+ 190:	8e df       	rcall	.-228    	; 0xae <COMM_IsHeader>
+ 192:	88 23       	and	r24, r24
+ 194:	89 f0       	breq	.+34     	; 0x1b8 <main+0x38>
+		{
+			currentField = COMM_GetField(data);
+ 196:	8c 2f       	mov	r24, r28
+ 198:	8e df       	rcall	.-228    	; 0xb6 <COMM_GetField>
+ 19a:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <currentField>
+							
+			if(COMM_IsWrite(data))
+ 19e:	8c 2f       	mov	r24, r28
+ 1a0:	88 df       	rcall	.-240    	; 0xb2 <COMM_IsWrite>
+ 1a2:	88 23       	and	r24, r24
+ 1a4:	39 f0       	breq	.+14     	; 0x1b4 <main+0x34>
+			{
+				currentPayload = COMM_GetPayloadHigh(data);
+ 1a6:	8c 2f       	mov	r24, r28
+ 1a8:	8b df       	rcall	.-234    	; 0xc0 <COMM_GetPayloadHigh>
+ 1aa:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <_edata+0x1>
+ 1ae:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+ 1b2:	ec cf       	rjmp	.-40     	; 0x18c <main+0xc>
+			}
+			else
+			{
+				ProcessReadRequest();
+ 1b4:	db df       	rcall	.-74     	; 0x16c <ProcessReadRequest>
+ 1b6:	ea cf       	rjmp	.-44     	; 0x18c <main+0xc>
+ 1b8:	8c 2f       	mov	r24, r28
+			}
+		}
+		else
+		{
+			currentPayload = currentPayload | COMM_GetPayloadLow(data);
+ 1ba:	88 df       	rcall	.-240    	; 0xcc <COMM_GetPayloadLow>
+ 1bc:	20 91 00 01 	lds	r18, 0x0100	; 0x800100 <_edata>
+ 1c0:	30 91 01 01 	lds	r19, 0x0101	; 0x800101 <_edata+0x1>
+ 1c4:	82 2b       	or	r24, r18
+ 1c6:	93 2b       	or	r25, r19
+ 1c8:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <_edata+0x1>
+ 1cc:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+ 1d0:	a7 df       	rcall	.-178    	; 0x120 <ProcessWriteRequest>
+			ProcessWriteRequest();
+ 1d2:	dc cf       	rjmp	.-72     	; 0x18c <main+0xc>
+
+000001d4 <TEMP_Init>:
+
+#define TEMP_SENSOR_CHANNEL		1
+
+void TEMP_Init() 
+{
+	ADCSRA = (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+ 1d4:	87 e8       	ldi	r24, 0x87	; 135
+ 1d6:	86 b9       	out	0x06, r24	; 6
+ 1d8:	08 95       	ret
+
+000001da <TEMP_Read>:
+}
+
+unsigned int TEMP_Read()
+{
+	ADMUX = TEMP_SENSOR_CHANNEL;
+ 1da:	81 e0       	ldi	r24, 0x01	; 1
+ 1dc:	87 b9       	out	0x07, r24	; 7
+	ADCSRA |= (1<<ADSC);
+ 1de:	36 9a       	sbi	0x06, 6	; 6
+
+	while(ADCSRA & (1<<ADSC));
+ 1e0:	36 99       	sbic	0x06, 6	; 6
+ 1e2:	fe cf       	rjmp	.-4      	; 0x1e0 <TEMP_Read+0x6>
+
+	return ADC;
+ 1e4:	84 b1       	in	r24, 0x04	; 4
+ 1e6:	95 b1       	in	r25, 0x05	; 5
+ 1e8:	08 95       	ret
+
+000001ea <UART_Init>:
+}
+
+unsigned char UART_Read() {
+	
+	return UDR0;
+}
+ 1ea:	2a b1       	in	r18, 0x0a	; 10
+ 1ec:	28 6d       	ori	r18, 0xD8	; 216
+ 1ee:	2a b9       	out	0x0a, r18	; 10
+ 1f0:	e5 e9       	ldi	r30, 0x95	; 149
+ 1f2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f4:	20 81       	ld	r18, Z
+ 1f6:	26 60       	ori	r18, 0x06	; 6
+ 1f8:	20 83       	st	Z, r18
+ 1fa:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+ 1fe:	89 b9       	out	0x09, r24	; 9
+ 200:	08 95       	ret
+
+00000202 <UART_ReadBlocking>:
+
+unsigned char UART_ReadBlocking() {
+	
+	while(!(UCSR0A & (1<<RXC0)));
+ 202:	5f 9b       	sbis	0x0b, 7	; 11
+ 204:	fe cf       	rjmp	.-4      	; 0x202 <UART_ReadBlocking>
+	return UDR0;
+ 206:	8c b1       	in	r24, 0x0c	; 12
+}
+ 208:	08 95       	ret
+
+0000020a <UART_Write>:
+
+void UART_Write(unsigned char data) {
+	
+	while(!TXC0);
+	UDR0 = data;
+ 20a:	8c b9       	out	0x0c, r24	; 12
+ 20c:	08 95       	ret
+
+0000020e <_exit>:
+ 20e:	f8 94       	cli
+
+00000210 <__stop_program>:
+ 210:	ff cf       	rjmp	.-2      	; 0x210 <__stop_program>
